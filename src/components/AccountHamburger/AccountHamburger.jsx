@@ -24,7 +24,8 @@ const AccountHamburger = ({ theme }) => {
     // redirect user to the auth page based on the returned status
     if (status === "student") {
       return <Redirect to="/studentIn" />;
-    } else if (status === "tutor") {
+    }
+    if (status === "tutor") {
       return <Redirect to="/tutorIn" />;
     }
   };

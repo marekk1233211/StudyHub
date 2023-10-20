@@ -14,13 +14,16 @@ import StudentPage from "./components/StudentPage/StudentPage";
 import TutorPage from "./components/TutorPage/TutorPage";
 import { AuthProvider } from "./components/AuthContext/AuthContext";
 import { useState, createContext } from "react";
+import { createBrowserHistory } from "history";
 
 export const ThemeContext = createContext(null);
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
+  const customHistory = createBrowserHistory({
+    basename: "/",
+  });
   const appWrapperClasses = `appWrapper ${theme === "dark" ? "dark" : "light"}`;
 
   const toggleTheme = () => {
