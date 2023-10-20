@@ -23,10 +23,9 @@ const AccountHamburger = ({ theme }) => {
     const status = localStorage.getItem("STATUS");
     // redirect user to the auth page based on the returned status
     if (status === "student") {
-      return <Redirect to="/studentIn" />;
-    }
-    if (status === "tutor") {
-      return <Redirect to="/tutorIn" />;
+      window.location.href = "/studentIn";
+    } else if (status === "tutor") {
+      window.location.href = "/tutorIn";
     }
   };
   const handleOpenModal = () => {
