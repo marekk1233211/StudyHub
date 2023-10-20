@@ -1,3 +1,3 @@
-const baseURL = "https://studyhub-rmr6.onrender.com";
+const baseURL = "https://studyhub-api.onrender.com";
 
 export { baseURL };
