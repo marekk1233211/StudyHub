@@ -94,6 +94,9 @@ const LoginRegisterPage = ({ theme }) => {
           <Link to="/registerPage" className={styles.linkComp}>
             <Button theme={theme}>Register</Button>
           </Link>
+          <Link to="/tutorIn">
+            <Button theme={theme}>Go to Tutor Page</Button>
+          </Link>
           {login ? (
             <p className="text-success">You Are Logged in Successfully</p>
           ) : (
