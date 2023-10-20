@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "subject": "Math",
+    "educationLevel": "High School",
+    "topic": "Algebra",
+    "localization": "City A",
+    "schedule": "Weekends",
+    "priceRange": 100
+  },
+  {
+    "id": 1,
+    "subject": "English",
+    "educationLevel": "Middle School",
+    "topic": "Reading",
+    "localization": "City B",
+    "schedule": "Afternoons",
+    "priceRange": 50
+  },
+  {
+    "id": 2,
+    "subject": "Programming",
+    "educationLevel": "University",
+    "topic": "React",
+    "localization": "City C",
+    "schedule": "Afternoons",
+    "priceRange": 200
+  },
+  {
+    "id": 3,
+    "subject": "Programming",
+    "educationLevel": "University",
+    "topic": "React",
+    "localization": "City C",
+    "schedule": "Afternoons",
+    "priceRange": 180
+  }
+]

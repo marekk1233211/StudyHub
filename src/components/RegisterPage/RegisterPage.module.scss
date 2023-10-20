@@ -1,0 +1,135 @@
+@import "../../Global.scss";
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(
+    100vh - $headerSize - $footerSize - 25px
+  ); //25px because of margin-top
+  margin-top: 25px;
+  font-family: $font_family2;
+}
+.wrapper.dark {
+  background-color: $color_dark_zielony3;
+}
+.innerWrapper1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  border-radius: 15px;
+}
+
+.innerWrapper1.light {
+  background-color: $color_bezowy2;
+  border: 2px solid $color_bezowy;
+}
+.innerWrapper1.dark {
+  background-color: $color_dark_zielony2;
+}
+.logParagraph {
+  flex-basis: 10%;
+  margin: 0;
+}
+.innerWrapper1.dark .logParagraph {
+  color: $color_dark_bezowy;
+}
+.innerWrapper1.dark span {
+  color: $color_dark_bezowy;
+}
+.innerWrapper2.dark input {
+  background-color: $color_dark_bezowy;
+}
+.policyParagraph.dark {
+  color: $color_dark_bezowy;
+}
+.innerWrapper1 input,
+.innerWrapper span {
+  flex-basis: 10%;
+}
+.innerWrapper1 p {
+  flex-basis: 20%;
+}
+.innerWrapper2 {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.innerWrapper2 input {
+  max-width: 40vw;
+  height: 25px;
+  margin-bottom: 25px;
+}
+.btn {
+  padding: 5px 15px;
+  border: 2px solid $color_bezowy;
+  background-color: $color_brazowy;
+  color: $color_bezowy;
+  cursor: pointer;
+}
+.policyParagraph {
+  text-align: center;
+  font-size: 11px;
+}
+.linkComp {
+  text-decoration: none;
+  color: blue;
+}
+@media (orientation: landscape) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .formWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .innerWrapper1 {
+    flex-direction: row;
+    flex-basis: 50%;
+    margin: 0 5px 0 5px;
+  }
+  .innerWrapper2 {
+    margin-top: 0px;
+  }
+  .logParagraph {
+    flex-basis: 10%;
+    line-height: 30px;
+  }
+  .policyParagraph {
+    flex-basis: 33%;
+    font-size: 11px;
+    padding: 0 5px 0 5px;
+  }
+
+  .innerWrapper2 input {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  .btn {
+    margin: 5px 0 0 0;
+  }
+
+  .innerWrapper1 {
+    position: relative;
+  }
+  .logParagraph {
+    position: absolute;
+    top: 5%;
+  }
+}
+@media (min-width: 1025px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .innerWrapper1 {
+    flex-direction: row;
+    width: 25vw;
+  }
+}

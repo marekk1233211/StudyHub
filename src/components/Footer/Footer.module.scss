@@ -1,0 +1,15 @@
+@import "../../Global.scss";
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $footerSize;
+}
+.footer.light {
+  background-color: $color_brazowy;
+  color: $color_bezowy;
+}
+.footer.dark {
+  background-color: $color_dark_zielony;
+  color: $color_dark_bezowy;
+}

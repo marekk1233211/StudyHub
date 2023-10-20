@@ -1,0 +1,79 @@
+@import "../../Global.scss";
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font_family2;
+  min-height: calc(100vh - $headerSize - $footerSize);
+  max-width: 100vw;
+}
+.innerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  word-break: break-word;
+  border-inline-start: 4px solid;
+  border-block-start: 4px solid;
+  border-image-source: radial-gradient(
+    circle at top left,
+    $color_bezowy2,
+    transparent 50%
+  );
+  border-image-slice: 1 fill;
+  padding: 10px;
+}
+.innerWrapper.dark {
+  color: $color_dark_bezowy;
+}
+.nameAndImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  flex-basis: calc(100% - 120px);
+}
+.img img {
+  max-width: 100px;
+  max-height: 20vh;
+  border-radius: 50%;
+}
+.dataInfo {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.btn {
+  flex-basis: calc(95%);
+}
+.innerWrapper.btn .linkComp {
+  text-decoration: none;
+}
+.tutorFoundParagraph p {
+  color: black;
+}
+.tutorFoundParagraph.dark {
+  color: $color_bezowy2;
+}
+@media (orientation: landscape) {
+  .element {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .innerWrapper {
+    flex-basis: 45%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+  .nameAndImg {
+    flex-basis: 95%;
+  }
+}
+@media (orientation: landscape) and (max-width: 767.2px) {
+}

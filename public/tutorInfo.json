@@ -1,0 +1,87 @@
+
+[
+  {
+    "id": 0,
+    "name": "Marek",
+    "lastName": "Korczak",
+    "subject": "Math",
+    "educationLevel": "High School",
+    "topic": "Algebra",
+    "localization": "City A",
+    "schedule": "Weekends",
+    "price": 100,
+    "numberOfTutoringProvided": 55,
+    "avgRating": 9,
+    "profilImg": "profil.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Łukasz",
+    "lastName": "Zgliński",
+    "subject": "English",
+    "educationLevel": "Middle School",
+    "topic": "Reading",
+    "localization": "City B",
+    "schedule": "Afternoons",
+    "price": 50,
+    "numberOfTutoringProvided": 1,
+    "avgRating": 10,
+    "profilImg": ""
+  },
+  {
+    "id": 2,
+    "name": "Ania",
+    "lastName": "Kwiatek",
+    "subject": "Programming",
+    "educationLevel": "University",
+    "topic": "React",
+    "localization": "City C",
+    "schedule": "Afternoons",
+    "price": 200,
+    "numberOfTutoringProvided": 15,
+    "avgRating": 9.5,
+    "profilImg": ""
+  },
+  {
+    "id": 3,
+    "name": "Artur",
+    "lastName": "Kwiatek",
+    "subject": "Programming",
+    "educationLevel": "University",
+    "topic": "React",
+    "localization": "City A",
+    "schedule": "Afternoons",
+    "price": 180,
+    "numberOfTutoringProvided": 1,
+    "avgRating": 1,
+    "profilImg": ""
+  }, 
+  {
+    "id": 4,
+    "name": "Dariusz",
+    "lastName": "Kwiatek",
+    "subject": "English",
+    "educationLevel": "Middle School",
+    "topic": "Reading",
+    "localization": "City A",
+    "schedule": "Afternoons",
+    "price": 50,
+    "numberOfTutoringProvided": 1,
+    "avgRating": 10,
+    "profilImg": ""
+  },
+  {
+    "id": 5,
+    "name": "Mateusz",
+    "lastName": "Korczak",
+    "subject": "Programming",
+    "educationLevel": "University",
+    "topic": "Vue",
+    "localization": "City A",
+    "schedule": "Afternoons",
+    "price": 50,
+    "numberOfTutoringProvided": 10,
+    "avgRating": 5,
+    "profilImg": ""
+  }
+]

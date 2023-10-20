@@ -1,0 +1,80 @@
+@import "../../Global.scss";
+.wrapper {
+  min-height: calc(100vh - $headerSize - $footerSize - 25px);
+  margin-top: 25px;
+  font-family: $font_family2;
+}
+.wrapper.dark {
+  background-color: $color_dark_zielony3;
+}
+.innerWrapper2.dark input {
+  background-color: $color_dark_bezowy;
+}
+.policyParagraph.dark {
+  color: $color_dark_bezowy;
+}
+.innerWrapper span {
+  flex-basis: 10%;
+}
+.innerWrapper2 {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.innerWrapper2 input {
+  max-width: 40vw;
+  height: 25px;
+  margin-bottom: 25px;
+}
+.btn {
+  padding: 5px 15px;
+  border: 2px solid $color_bezowy;
+  background-color: $color_brazowy;
+  color: $color_bezowy;
+  cursor: pointer;
+}
+.policyParagraph {
+  text-align: center;
+  font-size: 11px;
+}
+.linkComp {
+  text-decoration: none;
+  color: $color_dark_pomaranczowy;
+}
+@media (orientation: landscape) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .formWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .innerWrapper2 {
+    margin-top: 0px;
+    flex-basis: 33%;
+  }
+  .policyParagraph {
+    flex-basis: 33%;
+    font-size: 11px;
+    padding: 0 5px 0 5px;
+  }
+
+  .innerWrapper2 input {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  .btn {
+    margin: 5px 0 0 0;
+  }
+}
+@media (min-width: 1025px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

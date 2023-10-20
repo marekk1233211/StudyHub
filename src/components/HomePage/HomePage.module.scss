@@ -1,0 +1,211 @@
+@import "../../Global.scss";
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.about.dark {
+  color: $color_dark_bezowy;
+}
+.aboutHeader {
+  padding: 20px;
+}
+.aboutParagraph {
+  text-align: justify;
+  padding: 0 10px 0 10px;
+}
+.generalFindForm {
+  padding: 20px;
+}
+.findFormWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.innerWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // align-items: flex-start;
+  justify-content: space-between;
+  // height: calc(100vh - $headerSize - $footerSize);
+  font-family: $font_family2;
+  z-index: 1;
+  width: 90%;
+  // height: 60vh;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 20px;
+}
+.optionWrapper {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: row;
+  // flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color_bezowy2;
+  color: black;
+  padding: 15px 5px 15px 5px;
+  margin: 5px;
+  border-radius: 25px;
+  z-index: 1;
+}
+.optionWrapper.dark {
+  background-color: $color_dark_zielony2;
+  color: $color_bezowy2;
+}
+.optionWrapper:nth-last-child(1) {
+  background-color: transparent;
+}
+
+.paragraph {
+  position: relative;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Select {
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.Select.light {
+  border: 2px solid $color_pomaranczowy;
+
+  background-color: white;
+  color: black;
+}
+.Select.dark {
+  border: 1px solid $color_dark_bezowy;
+  background-color: $color_dark_zielony;
+  color: $color_dark_bezowy;
+}
+.par {
+  margin: 0;
+  font-size: 14px;
+  max-width: 90%;
+}
+#levelOfEducationIcon {
+  margin-left: -25px;
+}
+#priceRangeIcon {
+  margin-left: -25px;
+}
+.optionWrapper:nth-last-child(1) {
+  justify-content: center;
+  flex-basis: 100%;
+}
+.fontAwesomeIcon {
+  position: absolute;
+  top: 25%;
+  left: 110%;
+  transform: translateY(-25%);
+}
+.popupWrapper {
+  position: fixed;
+  top: 15%;
+  left: 5%;
+  right: 5%;
+  background-color: $color_ciemnyNiebieski;
+  color: $color_dark_bezowy;
+  border: 2px solid $color_dark_bezowy;
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 37px 140px;
+  border-bottom-left-radius: 120px 24px;
+  border-bottom-right-radius: 120px 24px;
+  box-shadow: 3px 15px 8px -10px;
+  padding: 20px;
+  z-index: 9999;
+}
+.popupWrapper.dark {
+  background-color: $color_dark_zielony3;
+  color: $color_dark_bezowy;
+  border: 2px solid $color_dark_bezowy;
+}
+.generalFindForm {
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+.generalFindForm input {
+  height: 40px;
+  border-radius: 7px;
+  width: 45%;
+  margin: 5%;
+}
+.generalFindForm.dark input {
+  background-color: $color_dark_bezowy;
+}
+@media (orientation: landscape) {
+  .popupWrapper {
+    top: 5%;
+  }
+}
+// .about {
+//   max-height: 30vh; /* Ograniczenie maksymalnej wysokości dla .about */
+// }
+// @media (orientation: landscape) {
+//   .innerWrapper {
+//     align-items: center;
+//     justify-content: center;
+//     width: 60%;
+//     height: 125vh;
+//   }
+//   .about {
+//     height: 65vh;
+//   }
+//   #levelOfEducationIcon {
+//     margin-left: -50px;
+//   }
+// }
+// @media (orientation: landscape) and (min-width: 666px) {
+//   .innerWrapper {
+//     height: calc(145vh);
+//   }
+// }
+// @media (orientation: landscape) and (min-height: 630px) {
+//   .innerWrapper {
+//     align-items: center;
+//     justify-content: center;
+//     width: 90%;
+//     height: calc(100vh - $headerSize - $footerSize);
+//   }
+//   .about {
+//     height: 65vh;
+//   }
+// }
+// @media (min-width: 1025px) {
+//   .innerWrapper {
+//     flex-direction: row;
+//     height: calc(100vh);
+//     width: 95%;
+//     height: 50vh;
+//     justify-content: space-around;
+//   }
+//   .about {
+//     height: 35vh;
+//   }
+//   .optionWrapper {
+//     flex-basis: 45%;
+//     justify-content: space-around;
+//   }
+//   .paragraph {
+//     font-size: 18px;
+//   }
+//   .aboutParagraph {
+//     padding: 0 200px 0 200px;
+//   }
+// }

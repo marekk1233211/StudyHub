@@ -1,0 +1,26 @@
+@import "../../Global.scss";
+/* Layout.module.scss */
+
+.Layout {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: $font_family2;
+}
+
+.background.dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color_dark_zielony3;
+  z-index: -1; /* w set lower z index because of background to see it below the elements */
+}
+.container {
+  width: 90%;
+  max-width: 1024px;
+
+  margin: 0 auto;
+  // flex-basis: 100%;
+}

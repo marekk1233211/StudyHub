@@ -1,0 +1,23 @@
+@import "../../Global.scss";
+.btn {
+  padding: 10px 15px;
+  margin: 5px 0 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn.light {
+  color: $color_bezowy;
+  border: 2px solid $color_pomaranczowy;
+  background-color: $color_zielony;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.btn.dark {
+  color: $color_dark_pomaranczowy;
+  background-color: $color_dark_zielony2;
+  box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+@media (orientation: landscape) {
+  .btn {
+    padding: 5px 15px;
+  }
+}

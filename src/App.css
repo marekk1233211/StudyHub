@@ -1,0 +1,17 @@
+@import "./Global.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Saira+Condensed:wght@300;400;700&family=Saira:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.appWrapper {
+  max-width: 100vw;
+  height: 100vh;
+}
+.appWrapper.dark {
+  background-color: #133328;
+}
+#dark {
+  background-color: red;
+}

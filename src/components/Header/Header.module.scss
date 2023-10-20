@@ -1,0 +1,84 @@
+@import "../../Global.scss";
+
+.wrapper {
+  position: relative;
+  font-family: $font_family2;
+}
+.navigation {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+.light.navigation {
+  background-color: $color_brazowy;
+}
+.dark.navigation {
+  background-color: $color_dark_zielony;
+}
+.bucketFontAwesome {
+  position: absolute;
+  top: 60%;
+  right: 25%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.linkComp {
+  text-decoration: none;
+  color: $color_bezowy;
+  margin: 0;
+}
+.light .linkComp {
+  color: $color_bezowy;
+}
+.dark .linkComp {
+  color: $color_dark_bezowy;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: $headerSize;
+}
+img {
+  max-height: calc($headerSize - 20px);
+  max-width: auto;
+}
+.siteName {
+  font-family: $font_family1;
+  font-size: 28px;
+  text-decoration: none;
+  margin: 0;
+}
+@media (orientation: landscape) {
+  .bucketFontAwesome {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+  }
+  .siteName {
+    font-size: 36px;
+  }
+}
+@media (orientation: portrait) {
+  .logHam {
+    margin-top: 60px;
+  }
+  .bucketFontAwesome {
+    right: 0%;
+    top: 0;
+    transform: translate(-50%, 50%);
+  }
+}
+@media (min-width: 1025px) {
+  .bucketFontAwesome {
+    right: 12.5%;
+  }
+  .siteName {
+    font-size: 44px;
+  }
+}

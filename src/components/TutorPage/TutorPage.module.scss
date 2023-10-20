@@ -1,0 +1,25 @@
+@import "../../Global.scss";
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  padding: 20px;
+  font-family: $font_family3;
+}
+.wrapper.dark {
+  color: $color_dark_bezowy;
+}
+.header {
+  margin-right: 20px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profileData {
+  padding: 20px;
+}
+.settingsIcon {
+  cursor: pointer;
+}

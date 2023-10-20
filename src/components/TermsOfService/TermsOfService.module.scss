@@ -1,0 +1,15 @@
+@import "../../Global.scss";
+.wrapper {
+  // height: calc(100vh - $headerSize - $footerSize);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.wrapper p {
+  text-align: justify;
+}
+.wrapper.dark p {
+  color: $color_bezowy;
+}
