@@ -59,7 +59,7 @@ function App() {
                   <Route path="/registerPage">
                     <RegisterPage theme={theme} />
                   </Route>
-                  <ProtectedRoutes
+                  {/* <ProtectedRoutes
                     path="/studentIn"
                     component={StudentPage}
                     theme={theme}
@@ -68,7 +68,8 @@ function App() {
                     path="/tutorIn"
                     component={TutorPage}
                     theme={theme}
-                  />
+                  /> */}
+                  <Route path="/tutorIn" component={TutorPage} />
                 </Switch>
               }
               footer={<Footer theme={theme} />}

@@ -5,12 +5,14 @@ import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import axios from "axios";
 import { baseURL } from "../config";
+import { useHistory } from "react-router-dom";
 
 const LoginRegisterPage = ({ theme }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [login, setLogin] = useState(false);
   const { setIsLoggedIn } = useContext(AuthContext);
+  const history = useHistory();
 
   const wrapperClasses = `${styles.wrapper} ${
     theme === "dark" ? styles.dark : styles.light
@@ -60,7 +62,8 @@ const LoginRegisterPage = ({ theme }) => {
           setIsLoggedIn(true);
         } else if (result.data.status === "tutor") {
           localStorage.setItem("STATUS", result.data.status);
-          window.location.href = "/tutorIn";
+          // window.location.href = "/tutorIn";
+          history.push("/tutorIn");
           setIsLoggedIn(true);
         }
       })
