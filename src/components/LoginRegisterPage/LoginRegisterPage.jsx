@@ -44,9 +44,7 @@ const LoginRegisterPage = ({ theme }) => {
           if (decodedToken && decodedToken.userId) {
             const userId = decodedToken.userId;
             localStorage.setItem("userId", userId);
-            console.log("Identyfikator użytkownika:", userId);
           } else {
-            console.log("Nie znaleziono identyfikatora użytkownika w tokenie.");
           }
         } else {
           console.log("Brak tokenu JWT w pamięci lokalnej.");

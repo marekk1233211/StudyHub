@@ -7,6 +7,7 @@ import { faGear } from "@fortawesome/free-solid-svg-icons";
 import { AuthContext } from "../AuthContext/AuthContext";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { baseURL } from "../config";
+import { Redirect } from "react-router-dom";
 const AccountHamburger = ({ theme }) => {
   const { logoutFun } = useContext(AuthContext);
   const [toggleHamburger, setToggleHamburger] = useState(false);
@@ -22,9 +23,9 @@ const AccountHamburger = ({ theme }) => {
     const status = localStorage.getItem("STATUS");
     // redirect user to the auth page based on the returned status
     if (status === "student") {
-      window.location.href = "/studentIn";
+      return <Redirect to="/studentIn" />;
     } else if (status === "tutor") {
-      window.location.href = "/tutorIn";
+      return <Redirect to="/tutorIn" />;
     }
   };
   const handleOpenModal = () => {
