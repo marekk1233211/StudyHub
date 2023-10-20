@@ -57,11 +57,11 @@ const LoginRegisterPage = ({ theme }) => {
         // redirect user to the auth page based on the returned status
         if (result.data.status === "student") {
           localStorage.setItem("STATUS", result.data.status);
-          window.location.href = "/studentIn";
+          // window.location.href = "/studentIn";
           setIsLoggedIn(true);
         } else if (result.data.status === "tutor") {
           localStorage.setItem("STATUS", result.data.status);
-          window.location.href = "/tutorIn";
+          // window.location.href = "/tutorIn";
           setIsLoggedIn(true);
         }
       })
