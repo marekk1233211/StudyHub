@@ -1,7 +1,8 @@
 import styles from "./LoginRegisterPage.module.scss";
 import React, { useState, useEffect, useContext } from "react";
+
 import { AuthContext } from "../AuthContext/AuthContext"; // Zaimportuj kontekst
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import Button from "../Button/Button";
 import axios from "axios";
 import { baseURL } from "../config";
@@ -68,6 +69,9 @@ const LoginRegisterPage = ({ theme }) => {
         error = new Error();
       });
   };
+  if (login) {
+    return <Redirect to="/tutorIn" />;
+  }
 
   return (
     <div className={wrapperClasses}>
@@ -93,9 +97,6 @@ const LoginRegisterPage = ({ theme }) => {
           <Button theme={theme}>Forgot password ?</Button>
           <Link to="/registerPage" className={styles.linkComp}>
             <Button theme={theme}>Register</Button>
-          </Link>
-          <Link to="/tutorIn">
-            <Button theme={theme}>Go to Tutor Page</Button>
           </Link>
           {login ? (
             <p className="text-success">You Are Logged in Successfully</p>
