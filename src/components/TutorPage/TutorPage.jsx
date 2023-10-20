@@ -32,7 +32,7 @@ const TutorPage = ({ theme }) => {
     const token = localStorage.getItem("TOKEN");
     const userId = localStorage.getItem("userId");
     axios
-      .get(`http://localhost:3000/tutor/${userId}`, {
+      .get(`${baseURL}/tutor/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
