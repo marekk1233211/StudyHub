@@ -5,6 +5,7 @@ import ProfileSettingsForm from "../ProfileSettingsForm/ProfileSettingsForm";
 import { AuthContext } from "../AuthContext/AuthContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
+import { baseURL } from "../config";
 
 import Button from "../Button/Button";
 
@@ -19,8 +20,8 @@ const TutorPage = ({ theme }) => {
   const [priceRangeProfile, setPriceRangeProfile] = useState("");
   const [image, setImage] = useState(null);
 
-  const baseUrl = "http://localhost:3000"; // Dodaj bazowy URL swojego serwera
-  const fullImageUrl = `${baseUrl}/api/images/${image}`;
+  // const baseUrl = "http://localhost:3000"; // Dodaj bazowy URL swojego serwera
+  const fullImageUrl = `${baseURL}/api/images/${image}`;
   const [showProfileEditPopUp, setShowProfileEditPopUp] = useState(false);
 
   const wrapperClasses = `${styles.wrapper} ${
