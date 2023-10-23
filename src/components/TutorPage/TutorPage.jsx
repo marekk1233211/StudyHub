@@ -57,7 +57,9 @@ const TutorPage = ({ theme }) => {
   return (
     <div className={wrapperClasses}>
       <div className={styles.profile}>
-        <h2 className={styles.header}>My tutor profile</h2>
+        <h2 className={styles.header} id="tutorHeader">
+          My tutor profile
+        </h2>
         <div className={styles.settingsIcon}>
           <FontAwesomeIcon
             icon={faPen}
