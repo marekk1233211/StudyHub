@@ -19,7 +19,7 @@ import { createBrowserHistory } from "history";
 export const ThemeContext = createContext(null);
 
 function App() {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const customHistory = createBrowserHistory({
     basename: "/",
@@ -33,7 +33,7 @@ function App() {
   };
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <BrowserRouter>
+      <BrowserRouter history={customHistory}>
         <AuthProvider isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}>
           <div className={appWrapperClasses}>
             <Layout
