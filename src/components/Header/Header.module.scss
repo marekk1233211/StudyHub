@@ -19,6 +19,11 @@
 .dark.navigation {
   background-color: $color_dark_zielony;
 }
+.innerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .bucketFontAwesome {
   position: absolute;
   top: 60%;
@@ -38,6 +43,7 @@
   color: $color_dark_bezowy;
 }
 .image {
+  flex-basis: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,26 +58,33 @@ img {
   font-size: 28px;
   text-decoration: none;
   margin: 0;
-}
-@media (orientation: landscape) {
-  .bucketFontAwesome {
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    transform: translateY(-50%);
-  }
-  .siteName {
-    font-size: 36px;
-  }
+  padding: 10px;
 }
 @media (orientation: portrait) {
   .logHam {
     margin-top: 60px;
+    font-size: 13px;
   }
   .bucketFontAwesome {
     right: 0%;
     top: 0;
     transform: translate(-50%, 50%);
+  }
+  .siteName {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+  }
+}
+@media (min-width: 375px) {
+  img {
+    max-height: calc($headerSize - 40px);
+    max-width: auto;
+  }
+  .siteName {
+    top: 40%;
   }
 }
 @media (min-width: 1025px) {
@@ -80,5 +93,25 @@ img {
   }
   .siteName {
     font-size: 44px;
+  }
+}
+
+@media (orientation: landscape) {
+  .innerWrapper {
+    justify-content: space-between;
+  }
+  .bucketFontAwesome {
+    position: absolute;
+    top: 50%;
+    right: 22.5%;
+    transform: translateY(-50%);
+  }
+  .siteName {
+    font-size: 36px;
+  }
+}
+@media (orientation: landscape) and (max-width: 668px) {
+  .bucketFontAwesome {
+    right: 27.5%;
   }
 }

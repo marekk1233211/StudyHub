@@ -29,6 +29,7 @@ function Header({ theme, toggleTheme, cookies, token }) {
             )}
           </div>
         </Link>
+
         <Link to="/" className={styles.linkComp}>
           <p className={styles.siteName}>STUDYHUB</p>
         </Link>
