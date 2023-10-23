@@ -148,7 +148,11 @@ const ProfileSettingsForm = ({ theme, setShowProfileEditPopUp }) => {
                 title="No file chosen"
               />
             </div>
-            <Button theme={theme} onClick={(e) => updateProfile(e)}>
+            <Button
+              theme={theme}
+              onClick={(e) => updateProfile(e)}
+              id="saveProfileSettings"
+            >
               Save the changes
             </Button>
           </div>

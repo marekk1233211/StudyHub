@@ -55,11 +55,11 @@ const LoginRegisterPage = ({ theme }) => {
         // redirect user to the auth page based on the returned status
         if (result.data.status === "student") {
           localStorage.setItem("STATUS", result.data.status);
-          // window.location.href = "/studentIn";
+          window.location.href = "/studentIn";
           setIsLoggedIn(true);
         } else if (result.data.status === "tutor") {
           localStorage.setItem("STATUS", result.data.status);
-          // window.location.href = "/tutorIn";
+          window.location.href = "/tutorIn";
           setIsLoggedIn(true);
         }
       })
@@ -67,9 +67,9 @@ const LoginRegisterPage = ({ theme }) => {
         error = new Error();
       });
   };
-  if (login) {
-    return <Redirect to="/tutorIn" />;
-  }
+  // if (login) {
+  //   return <Redirect to="/tutorIn" />;
+  // }
 
   return (
     <div className={wrapperClasses}>
@@ -89,12 +89,16 @@ const LoginRegisterPage = ({ theme }) => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button theme={theme} onClick={(e) => handleSubmit(e)}>
+          <Button theme={theme} onClick={(e) => handleSubmit(e)} id="loginBtn">
             Log in
           </Button>
-          <Button theme={theme}>Forgot password ?</Button>
+          <Button theme={theme} id="forgotPasswordBtn">
+            Forgot password ?
+          </Button>
           <Link to="/registerPage" className={styles.linkComp}>
-            <Button theme={theme}>Register</Button>
+            <Button theme={theme} id="registerBtn">
+              Register
+            </Button>
           </Link>
           {login ? (
             <p className="text-success">You Are Logged in Successfully</p>

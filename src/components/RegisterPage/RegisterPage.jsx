@@ -100,7 +100,7 @@ const RegisterPage = ({ theme }) => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button theme={theme} type="submit">
+          <Button theme={theme} type="submit" id="registerBtn">
             Register
           </Button>
         </div>

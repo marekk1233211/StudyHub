@@ -84,7 +84,7 @@ const TutorPage = ({ theme }) => {
         <p className={styles.data}>price range: {priceRangeProfile}</p>
       </div>
       <div className={styles.btn}>
-        <Button theme={theme} handleOnClick={logoutFun}>
+        <Button theme={theme} handleOnClick={logoutFun} id="logoutBtn">
           Wyloguj
         </Button>
       </div>

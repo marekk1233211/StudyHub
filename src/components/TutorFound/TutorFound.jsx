@@ -75,7 +75,9 @@ const TutorFound = ({ theme }) => {
         tutors found: {filteredTutorData.length}/{allTutorData.length}
       </p>
       <Link to="/" className={styles.linkComp}>
-        <Button theme={theme}>Back</Button>
+        <Button theme={theme} id="backBtn">
+          Back
+        </Button>
       </Link>
     </div>
   );

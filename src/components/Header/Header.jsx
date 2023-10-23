@@ -44,7 +44,9 @@ function Header({ theme, toggleTheme, cookies, token }) {
         ) : (
           <Link to="/loginRegister" className={styles.linkComp}>
             <div className={styles.logHam}>
-              <Button theme={theme}>login</Button>
+              <Button theme={theme} id="loginRegisterBtn">
+                login/register
+              </Button>
             </div>
           </Link>
         )}

@@ -1,6 +1,7 @@
 import styles from "./HomePage.module.scss";
 import { useHistory } from "react-router-dom";
 import { useState, useEffect } from "react";
+
 import Axios from "axios";
 import Button from "../Button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -149,7 +150,11 @@ const HomePage = ({ theme }) => {
           <strong>The project is not finished yet.</strong>
         </p>
         <div>
-          <Button theme={theme} handleOnClick={handleLearnMoreClick}>
+          <Button
+            theme={theme}
+            handleOnClick={handleLearnMoreClick}
+            id="learnMore"
+          >
             Learn More
           </Button>
         </div>
@@ -163,7 +168,7 @@ const HomePage = ({ theme }) => {
             value={term}
             onChange={(e) => setTerm(e.target.value)}
           />
-          <Button theme={theme} handleOnClick={handleFindClick}>
+          <Button theme={theme} handleOnClick={handleFindClick} id="find">
             Find
           </Button>
         </form>
@@ -288,7 +293,7 @@ const HomePage = ({ theme }) => {
           </select>
         </div>
         <div className={styles.optionWrapper}>
-          <Button theme={theme} handleOnClick={handleSearchClick}>
+          <Button theme={theme} handleOnClick={handleSearchClick} id="search">
             Search
           </Button>
         </div>
@@ -312,7 +317,11 @@ const HomePage = ({ theme }) => {
               <li>Tutors can upload image file.</li>
             </ol>
 
-            <Button theme={theme} handleOnClick={handleClosePopup}>
+            <Button
+              theme={theme}
+              handleOnClick={handleClosePopup}
+              id="closePopUp"
+            >
               Close
             </Button>
           </div>

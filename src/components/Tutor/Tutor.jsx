@@ -8,7 +8,6 @@ const Tutor = ({ theme }) => {
   const wrapperClasses = `${styles.wrapper} ${
     theme === "dark" ? styles.dark : styles.light
   }`;
-  // const baseUrl = "https://studyhub.ovh"; // add base url to your server
   return (
     <div className={wrapperClasses}>
       <div className={styles.innerWrapper}>
@@ -38,7 +37,9 @@ const Tutor = ({ theme }) => {
       </div>
       <div class={styles.btn}>
         <Link to="/" className={styles.linkComp}>
-          <Button theme={theme}>Back</Button>
+          <Button theme={theme} id="backBtn">
+            Back
+          </Button>
         </Link>
       </div>
     </div>
